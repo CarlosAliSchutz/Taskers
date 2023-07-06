@@ -1,0 +1,139 @@
+.detalhar-tarefa-modal {
+  width: 40vw;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.detalhar-tarefa-modal header {
+  background-color: var(--preto);
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  color: white;
+}
+
+.detalhar-tarefa-modal header section {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+}
+
+.detalhar-tarefa-modal header section h1 {
+  margin: 0 5px;
+  color: var(--roxo-fraco);
+  font-weight: 500;
+}
+
+.detalhar-tarefa-modal header section button {
+  margin: 0 10px;
+  height: 20px;
+  min-width: 20px;
+  background-image: url(../../../assets/icon/seta-esquerda-roxa.png);
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+}
+
+.detalhar-tarefa-modal header div {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-flex-start;
+  height: 100%;
+}
+
+.detalhar-tarefa-modal header div .deletar-tarefa {
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../../../assets/icon/lixeira.png);
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+}
+
+.detalhar-tarefa-modal header div .deletar-tarefa:hover {
+  background-image: url(../../../assets/icon/lixeira-roxo.png);
+  cursor: pointer;
+}
+
+.detalhar-tarefa-modal header div .editar-tarefa {
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../../../assets/icon/editar.png);
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+}
+
+.detalhar-tarefa-modal header div .editar-tarefa:hover {
+  background-image: url(../../../assets/icon/editar-roxo.png);
+  cursor: pointer;
+}
+
+.detalhar-tarefa-modal header section button:hover {
+  margin-left: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.detalhar-tarefa-modal section {
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 90%;
+  max-width: 90%;
+  justify-content: space-evenly;
+}
+
+.detalhar-tarefa-modal section div {
+  font-size: 20px;
+  max-width: 100%;
+  display: flex;
+  overflow-wrap: anywhere;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+.detalhar-tarefa-modal section div span {
+  font-weight: 700;
+  margin-right: 5px;
+  overflow-wrap:normal;
+}
+
+.detalhar-tarefa-modal section div .dias {
+  display: flex;
+}
+
+.detalhar-tarefa-modal section div .dias h3 {
+  margin: 0 5px;
+  padding: 0 5px;
+  background-color: var(--roxo-fraco);
+  font-size: 14px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1120px) {
+  .detalhar-tarefa-modal {
+    width: 80vw;
+  }
+}

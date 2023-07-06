@@ -1,0 +1,64 @@
+  .editar-senha {
+    background: #f0efef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 300px;
+    width: 500px;
+    justify-content: space-between;
+  }
+
+  .editar-senha header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .editar-senha header button {
+    margin: 0 5px;
+    height: 20px;
+    width: 20px;
+    background-image: url("../../../assets/icon/X-preto.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .editar-senha header button:hover, .editar-senha header button:focus {
+    background-image: url("../../../assets/icon/X-hover.svg");
+  }
+
+  .editar-senha input {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 10px;
+    color: #696868;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+
+  .editar-senha-retorno {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: black;
+  }
+
+  .button-editar-senha {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 480px) {
+    .editar-senha {
+      width: 350px;
+    }
+  }

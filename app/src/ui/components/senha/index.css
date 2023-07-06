@@ -1,0 +1,64 @@
+.recuperar-senha {
+  background: #f0efef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 300px;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.recuperar-senha header{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recuperar-senha header button {
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../assets/icon/X-preto.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.recuperar-senha header button:hover, .recuperar-senha header button:focus {
+  background-image: url("../../../assets/icon/X-hover.svg");
+}
+
+.recuperar-senha input {
+  width: 300px;
+  height: 60px;
+  margin-bottom: 10px;
+  color: #696868;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.recuperar-senha-retorno {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: black;
+}
+
+.button-recuperar-senha {
+  margin-top: 24px;
+}
+
+@media (max-width: 480px) {
+  .recuperar-senha {
+    width: 350px;
+  }
+}

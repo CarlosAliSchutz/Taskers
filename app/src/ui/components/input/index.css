@@ -1,0 +1,34 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+  width: 420px;
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+
+  font-size: 18px;
+  color: var(--preto);
+
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+input {
+  padding-left: 30px;
+}
+
+.text-input {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

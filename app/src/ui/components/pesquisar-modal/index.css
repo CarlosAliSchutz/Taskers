@@ -1,0 +1,29 @@
+.caixa-tarefas .pesquisar-tarefa-modal {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  border-bottom: 1px var(--preto) solid;
+}
+
+.caixa-tarefas .pesquisar-tarefa-modal label {
+  margin: 0;
+}
+
+.caixa-tarefas .pesquisar-tarefa-modal input {
+  height: 35px;
+  width: 95%;
+  margin: 0;
+  margin-left: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.caixa-tarefas .pesquisar-tarefa-modal input:focus, .caixa-tarefas .pesquisar-tarefa-modal input:hover  {
+  border: solid black;
+  outline: 0;
+  background: 0;
+}

@@ -1,0 +1,245 @@
+.tarefa-modal {
+  width: 35vw;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tarefa-modal header {
+  background-color: var(--preto);
+  border-radius: 4px 4px 0px 0px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarefa-modal header h1 {
+  color: var(--roxo-fraco);
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.tarefa-modal header button {
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../../../assets/icon/X-branco.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.tarefa-modal header button:hover, .tarefa-modal header button:focus {
+  background-image: url(../../../assets/icon/X-hover.svg);
+}
+
+.tarefa-modal section {
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.tarefa-modal section div {
+  width: 100%;
+}
+
+.tarefa-modal section button {
+  margin-bottom: 10px;
+}
+
+.tarefa-modal section .custom-input {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tarefa-modal section .custom-input div {
+  margin-bottom: 15px;
+}
+
+.tarefa-modal section .custom-input input {
+  width: 156px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tarefa-modal section .custom-input section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.tarefa-modal section label {
+  color: var(--preto);
+  font-size: 20px;
+}
+
+.tarefa-modal section input {
+  height: 32px;
+  width: 90%;
+}
+
+.tarefa-modal .select-dificuldade {
+  color: white;
+  background-color: var(--roxo-fraco);
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  border-radius: 20px;
+  margin-right: 10px;
+  height: 50px;
+  width: 30%;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.tarefa-modal .select-dificuldade:hover {
+  background-color: var(--roxo-escuro);
+}
+
+.tarefa-modal .select-dificuldade-ativa {
+  color: white;
+  background-color: var(--roxo-escuro);
+  cursor: pointer;
+  border: solid 3px black;
+  font-size: 24px;
+  border-radius: 20px;
+  margin-right: 10px;
+  height: 50px;
+  width: 30%;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.tarefa-modal .tarefa-class-extra {
+  margin-top: 10px;
+}
+
+.tarefa-modal .box-dia {
+  background-color: var(--roxo-fraco);
+  width: fit-content;
+  padding: 0 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  border: solid 2px var(--roxo-fraco);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tarefa-modal .box-dia-ativo {
+  background-color: var(--roxo-escuro);
+  width: fit-content;
+  padding: 0 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: white;
+  border: solid 2px black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.tarefa-modal .box-dia:hover {
+  background-color: var(--roxo-escuro);
+  border: solid 2px var(--roxo-escuro);
+}
+
+.tarefa-modal .container-dias {
+  font-size: 20px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: var(--preto);
+}
+
+.tarefa-modal .container-dias section{
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1120px) {
+  .tarefa-modal {
+    width: 80vw;
+  }
+
+  .tarefa-modal section div {
+    width: 100%;
+}
+
+  .tarefa-modal section input {
+    height: 32px;
+    width: 95%;
+  }
+
+  .tarefa-modal .select-dificuldade {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .tarefa-modal .select-dificuldade-ativa {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .tarefa-modal section .custom-input {
+    width: 100%;
+  }
+
+  .tarefa-modal section .custom-input section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tarefa-modal section button {
+    max-width: 90%;
+  }
+
+  .tarefa-modal section {
+    margin-right: 15px;
+    align-items: center;
+  }
+
+  .tarefa-modal .container-dias section{
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .tarefa-modal .box-dia {
+    margin-bottom: 5px;
+  }
+  .tarefa-modal section .custom-input input {
+    height: 35px;
+  }
+}

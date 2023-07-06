@@ -1,0 +1,121 @@
+.cadastro {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #9747ff;
+}
+
+.input-cadastro {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-cadastro input,
+.input-cadastro label,
+.input-cadastro a {
+  margin: 0 20px;
+}
+
+.image-logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.cadastro-ilustracao {
+  background-position: initial;
+  width: 576px;
+  height: 265px;
+  background-image: url("../../../assets/img/ilustracao-cadastro.svg");
+}
+
+.cadastro-link {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cadastro-error {
+  color: #ffffff;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.link span {
+  border-bottom: 0.1em solid;
+}
+
+@media (max-width: 1120px){
+
+  .cadastro{
+    padding: 0 10px;
+  }
+
+  .cadastro form{
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .cadastro form .input-cadastro{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .cadastro-ilustracao{
+    display: none;
+  }
+
+  .cadastro input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .cadastro .input-cadastro .button {
+    align-self: center;
+  }
+  .cadastro a {
+    margin: 0;
+  }
+}
+
+@media (max-height: 550px){
+  .cadastro {
+    justify-content: flex-start
+  }
+
+  .cadastro .image-logo, .input-cadastro {
+    margin: 0;
+  }
+
+  .cadastro form input {
+    width: 300px;
+  }
+
+  .cadastro form .input-cadastro{
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .cadastro form .input-cadastro div {
+    margin-right: 10px;
+  }
+
+  .cadastro a {
+    font-size: 12px
+  }
+}

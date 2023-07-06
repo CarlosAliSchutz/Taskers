@@ -1,0 +1,10 @@
+export { CadastroScreen } from "./cadastro/cadastro.screen";
+export { ConquistasScreen } from "./conquistas/conquistas.screen";
+export { EditarCosmeticosScreen } from "./editar-cosmeticos/editar-cosmeticos.screen";
+export { EditarPerfilScreen } from "./editar-perfil/editar-perfil.screen";
+export { LoginScreen } from "./login/login.screen";
+export { PerfilScreen } from "./perfil/perfil.screen";
+export { RankingScreen } from "./ranking/ranking.screen";
+export { MudarSenhaScreen } from "./redefinir-senha/redefinir-senha.screen";
+export { TarefasScreen } from "./tarefas/tarefas.screen";
+export { VerificacaoGoogle } from "./verificacao/verificacao.screen";

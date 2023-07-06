@@ -1,0 +1,218 @@
+.tela-tarefas {
+  background-color: var(--cinza-fraco);
+  height: 90vh;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.texto-boas-vindas {
+  margin-left: 32px;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-boas-vindas h1 {
+
+  font-size: 32px;
+}
+
+.texto-boas-vindas p {
+
+  font-size: 16px;
+}
+
+.caixa-tarefas {
+  background-color: var(--branco);
+  border-radius: 10px;
+  height: 460px;
+  width: 360px;
+  margin-top: 5%;
+  color: var(--preto);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.caixa-tarefas header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 85%;
+  height: 10%;
+}
+
+.caixa-tarefas header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border-bottom: 1px var(--preto) solid;
+  font-weight: 100;
+}
+
+.caixa-tarefas header h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.caixa-tarefas header button {
+  border: none;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url(../../../assets/icon/pesquisa.png);
+  transition: all 0.3s;
+}
+
+.caixa-tarefas header button:hover {
+  cursor: pointer;
+  background-image: url(../../../assets/icon/pesquisa-roxo.png);
+}
+
+.caixa-tarefas section {
+  width: 100%;
+  height: 75%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa-tarefas footer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.caixa-tarefas footer button {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  background-color: var(--cinza-escuro);
+  border: none;
+  font-size: 32px;
+  color: var(--branco);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.caixa-tarefas footer button:hover {
+  background-color: var(--roxo-fraco);
+}
+
+.caixa-tarefas footer span {
+  display: flex;
+  align-items: center;
+}
+
+.caixa-tarefas footer .tarefa-seta-vazia button {
+  margin-left: 40px;
+  height: 36px;
+  width: 36px;
+  background-color: transparent;
+  border: none;
+  cursor: auto;
+}
+
+.caixa-tarefas footer .tarefa-seta-esquerda button {
+  height: 36px;
+  width: 36px;
+  background-color: transparent;
+  background-image: url(../../../assets/icon/seta-page-esquerda.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.caixa-tarefas footer .tarefa-seta-esquerda button:hover {
+  background-image: url(../../../assets/icon/seta-page-esquerda-hover.png);
+}
+
+.caixa-tarefas footer .tarefa-seta-direita button {
+  height: 36px;
+  width: 36px;
+  background-color: transparent;
+  background-image: url(../../../assets/icon/seta-page-direita.png);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.caixa-tarefas footer .tarefa-seta-direita button:hover {
+  background-image: url(../../../assets/icon/seta-page-direita-hover.png);
+}
+
+.sem-tarefas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numero-paginacao {
+  position: absolute;
+  justify-content: flex-end;
+  margin-left: 80px;
+}
+
+@media (max-width: 1120px){
+
+  .texto-boas-vindas h1 {
+    font-size: 25px;
+  }
+
+  .texto-boas-vindas p {
+    font-size: 12px;
+  }
+
+  .tela-tarefas {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center
+  }
+
+  .caixa-tarefas {
+    margin: 5px 0;
+  }
+  .texto-boas-vindas {
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 5px;
+  }
+  .adicionar-tarefa-class-extra {
+    margin: 0;
+  }
+}
+
+@media (max-width: 280px){
+  .texto-boas-vindas {
+    padding: 10px;
+  }
+
+  .texto-boas-vindas h1 {
+    font-size: 20px;
+  }
+
+  .caixa-tarefas{
+    width: 100%;
+  }
+}

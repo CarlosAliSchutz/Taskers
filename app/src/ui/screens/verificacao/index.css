@@ -1,0 +1,36 @@
+.page-verificacao-google {
+  height: 100vh;
+  background: #9747ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loading-verificacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: #ffff;
+}
+
+.loading-verificacao img {
+  width: 150px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+.ilustracao-verificacao {
+  background-image: url("../../../assets/img/ilustracao-tela-verificacao.png");
+  width: 778px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 1120px){
+  .ilustracao-verificacao{
+    display: none;
+  }
+}

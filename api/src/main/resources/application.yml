@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://10.99.220.228:54311/postgres
+    username: postgres
+    password: postgres-11
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: taskers.system@gmail.com
+    password: kuckrbaidgauptpz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 637025066662-ctbv8ohabqrb6j3s6npgpfgmaeem6spf.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
+              - https://www.googleapis.com/auth/calendar
+              - https://www.googleapis.com/auth/calendar.events
+
+server:
+  error:
+    include-message: always
+
+spring.jackson.default-property-inclusion: non_null
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.web.socket: DEBUG
+    org.springframework.messaging: DEBUG
+    org.springframework.security: DEBUG
+

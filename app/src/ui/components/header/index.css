@@ -1,0 +1,255 @@
+.header {
+  background: #1C1B1B;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.header a {
+  text-decoration: none;
+  margin: 0 40px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  padding: 0 5px;
+  transition: all 0.3s;
+}
+
+.logo-header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.logo-header img {
+  height: 60%;
+}
+
+.botoes-header {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.botoes-header span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.icon {
+  display: inline-block;
+  background-size: cover;
+}
+
+.icon-usuario {
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../assets//icon/usuario.svg');
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.icon-usuario:hover,
+.icon-usuario:focus {
+  background-image: url("../../../assets//icon/usuario-roxo.svg");
+}
+
+.icon-sininho {
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../assets//icon/sininho.svg');
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.icon-sininho:hover,
+.icon-sininho:focus {
+  background-image: url("../../../assets/icon/sininho-roxo.svg");
+}
+
+.icon-missao {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../assets/icon/missao-icon.png");
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+.icon-missao:hover,
+.icon-missao:focus {
+  background-image: url("../../../assets/icon/missao-icon-hover.png");
+}
+
+.pagina-atual {
+  border-bottom: 2px solid;
+  color: var(--roxo-fraco);
+}
+
+.links {
+  color: #ffff;
+  transition: all 0.3s;
+}
+
+.links:hover {
+  color: var(--roxo-fraco);
+}
+
+.links:focus {
+  color: var(--roxo-fraco);
+}
+
+.menu-control {
+  display: none;
+}
+
+.botoes-header-mobile {
+  display: none;
+}
+
+@keyframes menu {
+  0%    {
+    left:0px;
+    top: -100px;
+  }
+  100%  {
+    left: 0px;
+    top:0px;
+  }
+}
+
+@media (max-width: 1120px){
+  .menu {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three{
+    background-color:#FFFFFF;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle{
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1C1B1B;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on .menu{
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  .menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(7px, 7px);
+    background-color: #FFFFFF;
+  }
+
+  .menu-section.on .menu-toggle .two{
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+    background-color: #FFFFFF;
+  }
+
+  .menu-section.on .menu{
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on .menu ul{
+    padding: 0;
+  }
+
+  .menu-section.on .menu ul a{
+    transition-duration:  0.5s;
+    font-size: 2rem;
+    display: block;
+    color: #FFFFFF;
+    border-bottom: 2px solid;
+    padding:2rem;
+  }
+
+  .botoes-header-mobile {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botoes-header-mobile li {
+    display: flex;
+    margin: 0 5px;
+  }
+
+  .pagina-atual {
+    border: none;
+  }
+
+  .botoes-header {
+    display: none;
+  }
+}
+
+@media (max-width: 280px){
+
+  .header{
+    padding: 0 10px;
+  }
+
+  .menu-toggle {
+    margin: 0;
+  }
+}
+
+@media (max-height: 550px){
+  .icon-sininho {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .icon-usuario {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .icon-missao {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .one, .two, .three {
+    height: 1vh;
+  }
+
+  .logo-header img {
+    height: 70%;
+  }
+}

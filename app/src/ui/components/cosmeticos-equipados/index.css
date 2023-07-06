@@ -1,0 +1,46 @@
+.papel-de-parede-perfil {
+  height: 90vh;
+  width: 75vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.papel-de-parede-perfil img {
+  margin-bottom: 10px;
+
+}
+
+.papel-de-parede-perfil .roupa-equipada{
+  max-width: 33%;
+  max-height: 95%;
+}
+
+.papel-de-parede-perfil .pet-equipado{
+  max-width: 33%;
+  max-height: 95%;
+}
+
+.papel-de-parede-perfil .planta-equipada{
+  max-width: 33%;
+  max-height: 95%;
+}
+
+
+@media (max-width: 1120px){
+
+  .papel-de-parede-perfil {
+    display: none;
+  }
+}
+
+@media (max-height: 550px){
+
+  .papel-de-parede-perfil {
+    display: flex;
+  }
+
+}
+

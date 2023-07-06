@@ -1,0 +1,88 @@
+.habito {
+  color: var(--preto);
+  font-size: 14px;
+  width: 95%;
+  min-height: 24%;
+  height: 24%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--cinza);
+  transition: all 0.3s;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.habito:hover {
+  background-color: var(--cinza-fraco);
+}
+
+.habito label {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  max-height: 100%;
+  color: var(--preto);
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+}
+
+.habito label h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.habito div {
+  margin: 0 10px;
+  width: 36px;
+  height: 36px;
+  background-color: var(--cinza-fraco);
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habito div h1 {
+  background-color: var(--roxo-fraco);
+  height: 80%;
+  width: 80%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.habito button {
+  height: 26px;
+  width: 26px;
+  border-radius: 100%;
+  border: solid 2px var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: transparent;
+  transition: all 0.2s;
+  margin: 0 1px;
+}
+
+.botao-diminuir {
+  padding-bottom: 3px;
+}
+
+.botao-diminuir:hover {
+  background-color: var(--roxo-fraco);
+  cursor: pointer;
+}
+
+.botao-aumentar:hover {
+  background-color: var(--roxo-fraco);
+  cursor: pointer;
+}

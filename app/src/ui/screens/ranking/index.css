@@ -1,0 +1,180 @@
+.ranking {
+  background: #F0EFEF;
+  height: 90vh;
+  padding: 64px 32px;
+}
+
+.ranking h1 {
+  font-size: 32px;
+  color: #2f2d2d;
+}
+
+.ranking h2 {
+  color: #2f2d2d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ranking p {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #9747ff;
+  font-weight: 500;
+}
+
+.ranking-usuarios {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 2px 0;
+}
+
+.usuario-experiencia {
+  background: #ffff;
+  width: 50%;
+  height: 74px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.usuario-experiencia img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.usuario-experiencia h1 {
+  font-size: 20px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.experiencia-ranking {
+  background: #1c1b1b;
+  width: 50%;
+  height: 74px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 12px;
+  color: #9747ff;
+  justify-content: center;
+}
+
+.experiencia-ranking h1 {
+  color: #9747ff;
+  font-size: 20px;
+}
+
+.ranking-posicao {
+  position: absolute;
+  margin: 0 50px;
+  color: #1c1b1b;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.pesquisa-ranking {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.lupa-ranking {
+  display: inline-block;
+  background-image: url("../../../assets/icon/icon-pesquisa.svg");
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.pesquisa-ranking .input-pesquisa-ranking {
+  animation-name: inputRanking;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  border: none;
+  background: #F0EFEF;
+  border-bottom: solid #7f3bfa;
+  color: #696868;
+  height: 40px;
+  font-size: 16px;
+}
+
+@keyframes inputRanking {
+  0%  {
+    width: 0;
+  }
+  100% {
+    width: 300px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1120px){
+  .ranking {
+    padding: 32px 10px;
+  }
+
+  .ranking h1 {
+    font-size: 25px;
+  }
+  .ranking h2 {
+    font-size: 14px;
+  }
+
+  .ranking p {
+    font-size: 15px;
+  }
+  .experiencia-ranking{
+    display: none;
+  }
+
+  .ranking-usuarios{
+    margin: 10px 0;
+  }
+
+  .usuario-experiencia {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+}
+
+.ranking-sem-usuarios {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.ranking-sem-usuarios h1 {
+  color: black;
+}
+
+@media (max-width: 280px){
+  .ranking h1 {
+    font-size: 20px;
+  }
+}
+@media (max-height: 550px){
+  .experiencia-ranking{
+    display: flex;
+  }
+
+  .usuario-experiencia {
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 50%;
+  }
+}
+

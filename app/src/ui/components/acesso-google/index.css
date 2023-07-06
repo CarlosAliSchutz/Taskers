@@ -1,0 +1,29 @@
+.button-google {
+  margin-top: 42px;
+  background: #ffffff;
+  border-radius: 30px;
+  width: 270px;
+  height: 56px;
+  color: #2f2d2d;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.button-google:hover{
+  background: #2f2d2d;
+  color: #ffffff;
+  border: none;
+}
+
+.button-google:focus{
+  background: #2f2d2d;
+  color: #ffffff;
+  border: none;
+}

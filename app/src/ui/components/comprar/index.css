@@ -1,0 +1,93 @@
+.item-botao-compra {
+  font-size: 14px;
+  width: 110px;
+  height: 45px;
+}
+
+.item-botao-compra:disabled,
+.item-botao-compra:disabled:hover {
+  cursor: not-allowed;
+  background: rgb(214, 214, 214);
+}
+
+.box-item-calculo {
+  display: flex;
+  justify-content: space-evenly;
+  padding:  10px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.box-item-calculo header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-item-calculo header button {
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../assets/icon/X-preto.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.box-item-calculo header button:hover, .box-item-calculo header button:focus {
+  background-image: url("../../../assets/icon/X-hover.svg");
+}
+
+.calculo-divisoria {
+  display: flex;
+}
+
+.calculo {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculo-moedas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+.text-roxo {
+  color: #7f3bfa;
+}
+
+.calculo-divisao {
+  width: 100%;
+  height: 0.5px;
+  background: #434343;
+}
+
+.item-image-compra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-image-compra img{
+  height: 190px;
+  padding-left: 10px;
+}
+@media (max-width: 720px) {
+  .item-image-compra img {
+    max-width: 110px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1120px) {
+  .box-item-calculo {
+    padding: 5px;
+  }
+}

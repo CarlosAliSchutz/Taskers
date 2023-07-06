@@ -1,0 +1,65 @@
+
+.box-notificacao {
+  width: 100%;
+  min-height: 10%;
+  border-bottom: solid 2px var(--preto);
+  background-color: var(--cinza-fraco);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-notificacao section {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-notificacao section header {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--roxo-fraco);
+  padding-left: 5px;
+}
+
+.box-notificacao section section {
+  font-size: 14px;
+  padding-left: 5px;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  word-wrap: break-word;
+}
+
+.box-notificacao button {
+  background-color: transparent;
+  background-image: url(../../../assets/icon/lixeira-preta.png);
+  background-size: cover;
+  border: none;
+  height: 24px;
+  width: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.box-notificacao button:hover {
+  background-image: url(../../../assets/icon/lixeira-roxo.png);
+}
+
+@media (max-width: 640px) {
+
+  .box-notificacao button {
+    margin: 10px;
+  }
+}

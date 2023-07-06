@@ -1,0 +1,12 @@
+.taskcoin {
+  display: flex;
+  align-items: center;
+}
+
+.taskcoin img {
+  margin: 0 11px;
+}
+
+.taskcoin p {
+  color: #2f2d2d;
+}

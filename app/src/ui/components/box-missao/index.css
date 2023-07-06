@@ -1,0 +1,99 @@
+
+.box-missao {
+    width: 100%;
+    border-top: solid 3px var(--preto);
+    border-bottom: solid 3px var(--preto);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-missao .box-missao-esquerda {
+    height: 100%;
+    width: 70%;
+}
+
+.box-missao .box-missao-esquerda header {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--roxo-fraco);
+    padding-left: 5px;
+}
+
+.box-missao .box-missao-esquerda section {
+    font-size: 14px;
+    padding-left: 5px;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y:auto;
+    overflow-wrap: anywhere;
+}
+
+
+.box-missao .box-missao-direita {
+    height: 100%;
+    width: 30%;
+    background-color: var(--cinza-fraco);
+}
+
+.box-missao .box-missao-direita footer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--roxo-fraco);
+    padding-left: 5px;
+}
+
+.box-missao .box-missao-direita section {
+    font-size: 18px;
+    padding-left: 5px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-missao .box-missao-direita section img {
+    height: 24px;
+}
+
+@media (max-width: 1024px) {
+    .box-missao {
+        flex-direction: column;
+    }
+
+    .box-missao .box-missao-esquerda {
+        width: 100%;
+    }
+
+    .box-missao .box-missao-direita {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .box-missao .box-missao-direita section {
+        width: fit-content;
+    }
+
+    .box-missao .box-missao-direita footer {
+        width: fit-content;
+    }
+}

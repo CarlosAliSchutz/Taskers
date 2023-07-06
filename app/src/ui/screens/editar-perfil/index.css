@@ -1,0 +1,107 @@
+.editar-perfil {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: var(--preto);
+  background-image: url(../../../assets/img/ilustracao-editar-perfil.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.botao-voltar {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../../../assets/icon/seta-esquerda-roxa.png);
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.editar-perfil form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.input-editar-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-editar-perfil input,
+.input-editar-perfil label,
+.input-editar-perfil a {
+  margin: 0 20px;
+}
+
+
+
+.icon-google {
+  width: 20px;
+}
+
+.button-editar-perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-editar-google {
+  margin-bottom: 44px;
+}
+
+@media (max-width: 1120px){
+  .editar-perfil{
+    background-image: none;
+  }
+
+  .editar-perfil form {
+    width: 100%;
+
+  }
+
+  .input-editar-perfil input{
+    width: 350px;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (max-height: 550px){
+  .button-editar-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .button-editar-google{
+    margin: 0;
+  }
+
+  .input-editar-perfil button, .input-editar-perfil a{
+    height: 45px;
+  }
+
+  .editar-perfil .image-logo {
+    margin: 0;
+  }
+
+  .input-editar-perfil input{
+    height: 40px;
+  }
+
+  .input-editar-perfil .text-input{
+    height: 30px;
+  }
+}

@@ -1,0 +1,96 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #9747ff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login form {
+  margin-left: 140px;
+}
+
+.login button {
+  width: 205px;
+}
+
+.login-text {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 44px;
+}
+
+.login-text a {
+  border-bottom: 0.1em solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.esqueci-senha {
+  position: absolute;
+  margin-top: 150px;
+}
+
+.button-login {
+  width: 205px;
+}
+
+.login-ilustracao {
+  background-image: url("../../../assets/img/ilustracao-background.jpg");
+  width: 704px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.login-error {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+
+@media (max-width: 1120px){
+  .login{
+    justify-content: center;
+  }
+
+  .login .input {
+    width: 350px;
+  }
+
+  .login form {
+    margin: 0;
+  }
+
+  .login span {
+    display: none;
+  }
+
+  .login-ilustracao {
+    display: none;
+  }
+
+}
+@media (max-height: 550px){
+  .login form input {
+    height:50px;
+    margin: 0;
+  }
+
+  .login .image-logo {
+    margin: 0;
+  }
+
+  .login-text{
+    margin: 0;
+  }
+
+  .login button{
+    margin-top: 9px;
+  }
+}

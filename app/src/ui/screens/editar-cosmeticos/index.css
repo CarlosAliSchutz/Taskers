@@ -1,0 +1,223 @@
+.tela-cosmeticos {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.tela-cosmeticos footer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cosmeticos {
+  background: var(--cinza-fraco);
+  height: 90vh;
+  width: 25%;
+}
+
+.cosmeticos-align {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.cosmeticos-align div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cosmeticos-align div header {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cosmeticos-align div header h1 {
+  margin-left: 15px;
+}
+
+.cosmeticos-align div header div {
+  display: flex;
+  width: auto;
+}
+
+.cosmeticos-itens {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 75%;
+  background-color: white;
+  margin: 0 20px;
+  border: solid 2px var(--cinza);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.cosmeticos-filtro {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cosmeticos-filtro img {
+  margin: 0 5px;
+}
+
+.editar-opcoes-filtro ul {
+  list-style-type: none;
+  position: absolute;
+  background: #2f2d2d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 0;
+  width: 161px;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  left: 0;
+  margin-top: 60px;
+  margin-left: 12%;
+}
+
+.editar-opcoes-filtro li {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.editar-opcoes-filtro li:hover,
+.editar-opcoes-filtro li:focus {
+  color: #c4c4c4;
+}
+
+.editar-opcoes-divisao {
+  width: 143px;
+  height: 0px;
+  border: 0.5px solid #ffffff;
+}
+
+.tela-cosmeticos .papel-de-parede-perfil {
+  justify-content: center;
+  height: 90vh;
+}
+
+@media (max-width: 910px){
+  .tela-cosmeticos{
+    flex-direction: column-reverse;
+  }
+
+  .tela-cosmeticos .papel-de-parede-perfil {
+    display: flex;
+    width: 100%;
+    height: 50%;
+  }
+
+  .cosmeticos{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tela-cosmeticos .papel-de-parede-perfil img {
+    width: 15%;
+    height: auto;
+  }
+
+
+  .editar-opcoes-filtro ul{
+    right: 0;
+    left: auto;
+    top: 50%;
+    margin-top: 80px;
+    margin-right: 5px;
+  }
+  .tela-cosmeticos footer{
+    background: none;
+  }
+}
+
+@media (max-width: 600px){
+  .tela-cosmeticos .papel-de-parede-perfil img {
+    width: 30%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 1120px){
+  .tela-cosmeticos .papel-de-parede-perfil {
+    display: flex;
+  }
+
+  .cosmeticos {
+    min-width: 280px;
+  }
+
+  .editar-opcoes-filtro ul{
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+  .tela-cosmeticos footer button{
+    width: 200px;
+    height: 40px;
+  }
+
+}
+@media (max-height: 550px){
+  .tela-cosmeticos{
+    flex-direction: row;
+  }
+
+  .tela-cosmeticos .papel-de-parede-perfil {
+    display: flex;
+    height: 100%;
+  }
+
+  .cosmeticos{
+    width: 25%;
+    height: 100%;
+  }
+
+  .tela-cosmeticos .papel-de-parede-perfil img {
+    width: 30%;
+    height: auto;
+  }
+
+  .editar-opcoes-filtro ul{
+    right: 50%;
+    top: 0;
+  }
+
+  .tela-cosmeticos footer {
+    background-color: #2f2d2d80;
+    height: 45px;
+  }
+
+
+  .box-item-editar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .box-item-editar img {
+    max-height: 70px;
+    max-width: 70px;
+  }
+  .cosmeticos-itens {
+    margin: 0 5%;
+  }
+}

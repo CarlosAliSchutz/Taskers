@@ -1,0 +1,53 @@
+.form-redefinir-senha {
+  background: #9747FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-redefinir-senha form {
+  display: flex;
+  align-items: center;
+}
+
+.form-redefinir-senha h1 {
+  color: #FFFF;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redefinir-senha-logout {
+  margin-top: 42px;
+  width: 250px;
+}
+
+.redefinir-senha-retorno {
+  color: #FFFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1120px){
+
+  .form-redefinir-senha form{
+    padding: 0 10px;
+  }
+
+  .form-redefinir-senha .input {
+    width: 350px;
+  }
+}
+
+@media (max-height: 550px){
+  .redefinir-senha-logout{
+    margin-top: 32px;
+  }
+}
