@@ -1,4 +1,4 @@
-
+![Banner](./app/public/Banner.png)
 # Taskers
 
 Taskers é uma aplicação de gerenciamento de tarefas.
@@ -480,7 +480,7 @@ Com o projeto instalado, realize esse comando para iniciar o projeto.
 ## Tela Login
 A tela de login é a tela inicial da aplicação, nela o usuário poderá se logar com uma conta nativa da aplicação ou então com uma conta Google. Além disso você poderá se registrar com uma conta nativa nova, e caso perder a senha poderá recuperá-la.
 
-![Login1](./app/app/public/prints-readme/Login1.png)
+![Login1](./app/public/prints-readme/Login1.png)
 
 ### Login nativo
 O login nativo é realizado com os dados do email do usuário e sua senha.
