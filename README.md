@@ -3,8 +3,8 @@
 
 Taskers é uma aplicação de gerenciamento de tarefas.
 
-- [Documentação da API](#api)
-- [Documentação do Front-end](#front-end)
+- [Documentação da API](#documentação-da-api)
+- [Documentação do Front-end](#documentação-do-front-end)
 
 ## OBJETIVO
 
@@ -457,6 +457,8 @@ Ao concluir um determinado objetivo, o usuário irá concluir uma conquista. As 
 ```http
   GET /conquistas?size=25
 ```
+
+## Documentação do Front-end
 
 ## Instalação
 Para realizar a instalação do projeto front-end na sua máquina, realize esses comandos:
