@@ -1,4 +1,3 @@
-![Banner](./app/public/Banner.png)
 # Taskers
 
 Taskers é uma aplicação de gerenciamento de tarefas.
