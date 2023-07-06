@@ -439,7 +439,7 @@ Ao concluir um determinado objetivo, o usuário irá concluir uma conquista. As 
 Para realizar a instalação do projeto front-end na sua máquina, realize esses comandos:
 
 ### Instalar App
-```http
+```bash
   $ git clone https://github.com/CarlosAliSchutz/Taskers
   $ cd Taskers
   $ npm install
