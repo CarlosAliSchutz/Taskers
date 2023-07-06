@@ -49,9 +49,8 @@ Morar sozinho requer lidar com tarefas diárias e rotinas. A organização é es
 
 #### Realiza login
 
-```http
-  POST /auth/login
-```
+- **End-point:** `http://localhost:8080/auth/login`  
+- **Method:** `POST` 
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -61,24 +60,21 @@ Morar sozinho requer lidar com tarefas diárias e rotinas. A organização é es
 #### Realiza login com o Google
 Quando logado com o Google, o usuário terá suas tarefas integradas com o Google Agenda.
 
-```http
-  /oauth2/authorization/google
-```
+- **End-point:** `http://localhost:8080/oauth2/authorization/google`  
+
 Quando a rota é acessada, é disponibilizada uma página do Google onde é possivel efetuar o login.
 
 #### Realiza logout
 
-```http
-  POST /auth/logout
-```
+- **End-point:** `http://localhost:8080/auth/logout`  
+- **Method:** `POST` 
 
 #### Solicita nova senha
 
 É enviado um email para o usuário, contendo um token para redefinição da senha.
 
-```http
-  POST /auth/esqueci-senha
-```
+- **End-point:** `http://localhost:8080/auth/esqueci-senha`  
+- **Method:** `POST` 
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -88,9 +84,8 @@ Quando a rota é acessada, é disponibilizada uma página do Google onde é poss
 
 Quando passado o token recebido no email como parâmetro, é possivel redefinir a senha.
 
-```http
-  PUT /auth/recuperar-senha/${token}
-```
+- **End-point:** `http://localhost:8080/auth/recuperar-senha/${token}`  
+- **Method:** `PUT` 
 
 | Parâmetro | Tipo       | Descrição                                  |
 |:----------| :--------- |:-------------------------------------------|
@@ -101,23 +96,22 @@ Quando autenticado, é possível realizar algumas ações com a conta do usuári
 
 #### Retorna o usuário detalhado
 
-```http
-  GET /usuarios/me
-```
+- **End-point:** `http://localhost:8080/usuarios/me`  
+- **Method:** `GET` 
+
 Retorna todas as informações importantes do usuário logado
 
 #### Retorna o usuário resumido para validação
 
-```http
-  GET /usuarios/validar
-```
+- **End-point:** `http://localhost:8080/usuarios/validar`  
+- **Method:** `GET` 
+
 Retorna as informações básicas do usuário logado, rota utilizada para validar login bem sucedido.
 
 #### Altera dados do usuário
 
-```http
-  PUT /usuarios
-```
+- **End-point:** `http://localhost:8080/usuarios`  
+- **Method:** `PUT` 
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -127,9 +121,8 @@ Retorna as informações básicas do usuário logado, rota utilizada para valida
 
 #### Altera senha atual
 
-```http
-  PUT /usuarios/editar-senha
-```
+- **End-point:** `http://localhost:8080/usuarios/editar-senha`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                  |
 | :---------- | :--------- |:-------------------------------------------|
@@ -142,9 +135,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Retorna os hábitos paginados e filtrados
 
-```http
-  GET /habitos?text=
-```
+- **End-point:** `http://localhost:8080/habitos?text=`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -152,9 +144,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Retorna um hábito detalhado
 
-```http
-  GET /habitos/${id}
-```
+- **End-point:** `http://localhost:8080/habitos/${id}`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -162,9 +153,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Inclui um hábito novo
 
-```http
-  POST /habitos
-```
+- **End-point:** `http://localhost:8080/habitos`  
+- **Method:** `POST`
 
 | Parâmetro   | Tipo       | Descrição                                                                            |
 | :---------- | :--------- |:-------------------------------------------------------------------------------------|
@@ -175,9 +165,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Altera um hábito
 
-```http
-  PUT /habitos/${id}
-```
+- **End-point:** `http://localhost:8080/habitos/${id}`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -188,9 +177,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Aumenta as execuções de um hábito
 
-```http
-  PUT /habitos/${id}/aumentar
-```
+- **End-point:** `http://localhost:8080/habitos/${id}/aumentar`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -198,9 +186,8 @@ Hábitos são tarefas simples do dia-a-dia como beber água. Um hábito pode ser
 
 #### Deleta um hábito
 
-```http
-  DELETE /habitos/${id}
-```
+- **End-point:** `http://localhost:8080/habitos/${id}`  
+- **Method:** `DELETE`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -212,9 +199,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Retorna as diárias paginadas e filtradas
 
-```http
-  GET /diarias?text=
-```
+- **End-point:** `http://localhost:8080/diarias?text=`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -222,9 +208,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Retorna uma diária detalhada
 
-```http
-  GET /diarias/${id}
-```
+- **End-point:** `http://localhost:8080/diarias/${id}`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -232,9 +217,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Inclui uma diária novo
 
-```http
-  POST /diarias
-```
+- **End-point:** `http://localhost:8080/diarias`  
+- **Method:** `POST`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -247,9 +231,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Altera uma diária
 
-```http
-  PUT /diarias/${id}
-```
+- **End-point:** `http://localhost:8080/diarias/${id}`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -262,9 +245,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Realiza uma diária
 
-```http
-  PUT /diarias/${id}/realizar
-```
+- **End-point:** `http://localhost:8080/diarias/${id}/realizar`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -272,9 +254,8 @@ Diárias são tarefas que possuem um horário e uma lista de dias definidos para
 
 #### Deleta uma diária
 
-```http
-  DELETE /diarias/${id}
-```
+- **End-point:** `http://localhost:8080/diarias/${id}`  
+- **Method:** `DELETE`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -286,9 +267,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Retorna os afazers paginados e filtrados
 
-```http
-  GET /afazeres?text=
-```
+- **End-point:** `http://localhost:8080/afazeres?text=`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -296,9 +276,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Retorna um afazer detalhado
 
-```http
-  GET /afazeres/${id}
-```
+- **End-point:** `http://localhost:8080/afazeres/${id}`  
+- **Method:** `GET`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -306,9 +285,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Inclui um afazer novo
 
-```http
-  POST /afazeres
-```
+- **End-point:** `http://localhost:8080/afazeres`  
+- **Method:** `POST`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -319,9 +297,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Altera um afazer
 
-```http
-  PUT /afazeres/${id}
-```
+- **End-point:** `http://localhost:8080/afazeres/${id}`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -332,9 +309,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Finaliza um afazer
 
-```http
-  PUT /afazeres/${id}/finalizar
-```
+- **End-point:** `http://localhost:8080/afazeres/${id}/finalizar`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -343,9 +319,8 @@ Afazeres são tarefas maiores e mais complexas, sendo realizadas apenas uma vez,
 
 #### Deleta um afazer
 
-```http
-  DELETE /afazeres/${id}
-```
+- **End-point:** `http://localhost:8080/afazeres/${id}`  
+- **Method:** `DELETE`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -357,27 +332,27 @@ Cosméticos são itens colecionáveis que podem ser comprados utilizando Taskcoi
 
 #### Retorna os Cosméticos Disponíveis paginados
 Os cosméticos não comprados pelo usuário são chamados de "Disponíveis".
-```http
-  GET /cosmeticos/disponiveis?size=50
-```
+
+- **End-point:** `http://localhost:8080/cosmeticos/disponiveis?size=50`  
+- **Method:** `GET`
 
 #### Retorna os Cosméticos Adquiridos paginados
 Os cosméticos comprados pelo usuário são chamados de "Adquiridos".
-```http
-  GET /cosmeticos/adquiridos?size=50
-```
+
+- **End-point:** `http://localhost:8080/cosmeticos/adquiridos?size=50`  
+- **Method:** `GET`
 
 #### Retorna os Cosméticos Equipados
 Lista os 4 cosméticos que foram equipados pelo usuário.
-```http
-  GET /cosmeticos/equipados
-```
+
+- **End-point:** `http://localhost:8080/cosmeticos/equipados`  
+- **Method:** `GET`
 
 #### Compra um cosmético
 Caso você possua Taskcoins suficientes para comprar o cosmético, ele irá para a lista de Cosméticos Adquiridos.
-```http
-  POST cosmeticos/${id}/comprar
-```
+
+- **End-point:** `http://localhost:8080/cosmeticos/${id}/comprar`  
+- **Method:** `POST`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -385,9 +360,9 @@ Caso você possua Taskcoins suficientes para comprar o cosmético, ele irá para
 
 #### Equipa um cosmético
 Caso o cosmético esteja na sua lista de Cosméticos Adquiridos, ele irá ser equipado.
-```http
-  PUT cosmeticos/${id}/equipar
-```
+
+- **End-point:** `http://localhost:8080/cosmeticos/${id}/equipar`  
+- **Method:** `PUT`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -397,45 +372,46 @@ Caso o cosmético esteja na sua lista de Cosméticos Adquiridos, ele irá ser eq
 Missões diárias são missões relacionadas a suas tarefas criadas. Cada missão irá ter um objetivo de realizar um determinado número de vezes alguma de suas tarefas. Ao completar uma missão diária o usuário recebe experiência e Taskcoins. Missões diárias são reiniciadas todo dia à meia-noite.
 
 #### Retorna as missões Diárias
-```http
-  GET /missoes
-```
+
+- **End-point:** `http://localhost:8080/missoes`  
+- **Method:** `GET`
+
 ### Dias
 Os dias são informações necessárias para as Diárias. Cada dia possui um id e seu respectivo nome. Os dias são usados para incluir ou alterar diárias.
 
 #### Retorna os dias da semana
-```http
-  GET /dias
-```
+
+- **End-point:** `http://localhost:8080/dias`  
+- **Method:** `GET`
+
 ### Notificações
 Notificações são enviadas ao usuário para avisar que alguma diária deve ser realizada. Elas são enviadas sempre que bate o horário marcado na diária em específico. Notificações podem ser enviadas para o email do usuário.
 
 
 #### Retorna as notificações
-```http
-  GET /notificacoes
-```
+
+- **End-point:** `http://localhost:8080/notificacoes`  
+- **Method:** `GET`
 
 #### Ativa ou desativa as notificações por email.
-```http
-  PUT /notificacoes/email
-```
+
+- **End-point:** `http://localhost:8080/notificacoes/email`  
+- **Method:** `GET`
 
 #### Notificações pelo WebSocket
 As notificações aparecem em tempo real para o usuário caso seja ativado a rota pelo WebSocket.
-```http
-  WS /ws
-```
+
+- **End-point:** `http://localhost:8080/ws`  
+- **Method:** `GET`
+
 Rota direcionada ao usuário autenticado, onde pode receber as notificações de forma privada.
-```http
-  /user/notificacao
-```
+
+- **End-point:** `http://localhost:8080/user/notificacao`  
 
 #### Deleta uma notificação
 
-```http
-  DELETE /notificacoes/${id}
-```
+- **End-point:** `http://localhost:8080/notificacoes/${id}`  
+- **Method:** `DELETE`
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
@@ -445,16 +421,17 @@ Rota direcionada ao usuário autenticado, onde pode receber as notificações de
 Cada usuário possuirá uma posição no Ranking geral do Taskers. A posição no Ranking é calculada através da quantidade de experiência que o usuário possui.
 
 #### Retorna o ranking
-```http
-  GET /ranking?nome=
-```
+
+- **End-point:** `http://localhost:8080/ranking?nome=`  
+- **Method:** `GET`
+
 ### Conquistas
 Ao concluir um determinado objetivo, o usuário irá concluir uma conquista. As conquistas são objetivos relacionados às ações que o usuário realiza na aplicação, como criar tarefas, executá-las, comprar cosméticos, e concluir missões diárias.
 
 #### Retorna as conquistas do usuário
-```http
-  GET /conquistas?size=25
-```
+
+- **End-point:** `http://localhost:8080/conquistas?size=25`  
+- **Method:** `GET`
 
 ## Documentação do Front-end
 
