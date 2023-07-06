@@ -37,9 +37,8 @@ Morar sozinho requer lidar com tarefas diárias e rotinas. A organização é es
 
 #### Registra um usuário
 
-```http
-  POST /auth/registrar
-```
+- **End-point:** `http://localhost:8080/auth/registrar`  
+- **Method:** `POST` 
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
@@ -464,8 +463,8 @@ Para realizar a instalação do projeto front-end na sua máquina, realize esses
 
 ### Instalar App
 ```http
-  $ git clone https://git.cwi.com.br/crescer/2023-01/TCC/madrid.git
-  $ cd madrid
+  $ git clone https://github.com/CarlosAliSchutz/Taskers
+  $ cd Taskers
   $ npm install
 ```
 
