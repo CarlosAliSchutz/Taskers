@@ -448,7 +448,7 @@ Para realizar a instalação do projeto front-end na sua máquina, realize esses
 ### Iniciar App
 Com o projeto instalado, realize esse comando para iniciar o projeto.
 
-```http
+```bash
   $ npm start
 ```
 
